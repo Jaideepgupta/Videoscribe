@@ -1,0 +1,27 @@
+{
+  "Rules": [
+    {
+      "ID": "ExpireTempMediaAfter24Hours",
+      "Filter": {
+        "Prefix": "temp-media/"
+      },
+      "Status": "Enabled",
+      "Expiration": {
+        "Days": 1
+      },
+      "AbortIncompleteMultipartUpload": {
+        "DaysAfterInitiation": 1
+      }
+    },
+    {
+      "ID": "ExpireAudioUploadsAfter48Hours",
+      "Filter": {
+        "Prefix": "audio-uploads/"
+      },
+      "Status": "Enabled",
+      "Expiration": {
+        "Days": 2
+      }
+    }
+  ]
+}
